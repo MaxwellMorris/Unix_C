@@ -1,0 +1,29 @@
+
+## 1. Revision
+Explain what each of the following C programs does:
+
+a)   Takes in a number from inputed from the terminal and assigns it the variable "number"
+    It runs through an else if loop and outputs different strings based on what the value of the 
+    number is.
+
+b)  i) Takes an input from the terminal and then counts up in steps of 1 to the number.
+    ii) How could you replace the while loop?
+        int i
+        if (i=0; i < count, i++) {
+        prinf("%d", i);
+        i++;
+        }
+c)  readInt function prints a string and gets an int from the user and returns the value.
+    printInt takes an integer argument and prints it.
+    The main function finds the difference of squares between two values read in from the user
+    and prints that value and returns 0
+
+## 2. Forward declarations
+a)  There is no need for a forward declaration
+b)  Where n is the number of functions n-1 forward declarations are required
+c)  No forward declarations are required
+d)  3 forward declarations are required
+
+# Practical Excercises
+
+
