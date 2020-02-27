@@ -14,10 +14,10 @@ void test(float A, float B)
     int I = A/B;
     float F = A/B;
     if (I==F){
-        printf("\nYou Have entered an divisible numbers.");
+        printf("\nYou Have entered an divisible numbers.\n");
     }
     else {
-        printf("\nYou have entered indivisible numbers.");
+        printf("\nYou have entered indivisible numbers.\n");
     }
 }
 

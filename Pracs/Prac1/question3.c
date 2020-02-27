@@ -8,8 +8,18 @@ int readNumber(void);
 
 int main(void)
 {
+    int FACTORIAL;
     int input = readNumber();
-    factorial(input);
+    while (input>=0)
+    {
+        FACTORIAL = factorial(input);
+        if (input>=0)
+        {
+            printf("The factorial is: %d\n", FACTORIAL);
+        }
+        input = readNumber();
+    }
+    printf("Invalid number.\n");
     return 0;
 
 }
@@ -17,22 +27,23 @@ int main(void)
 int readNumber(void)
 {
     int x;
-    printf("input and integer");
+    printf("input and integer: ");
     scanf("%d", &x);
     return x;
-
 }
 
 
 int factorial(int n)
 {
-    int count = 1;
     int factorial = 1;
-    while (n - count != 0)
+    int i;
+    for (i=n; i>1; i--)
     {
-        factorial = factorial*(count+1);
-        count++;
+       factorial = factorial*i;
     }
-    printf("The factorial is: %d", factorial);
-    return 0;
+
+
+    return factorial;
 }
+
+
