@@ -1,0 +1,20 @@
+1)
+    a) Will try to include the standard predefined header
+    b) Include a header in the folder
+    c) Creates a substituition for LENGTH to be 100
+    d) Creates a substituition for CUBE()
+    e) Creates another substitution
+    f) if THEFILE is not defined prints LENGTH
+    g) if THEFILE is not defined defines THEFILE and prints Hello Word
+
+2)
+    a) Global variables are considered bad programming practice as
+       as if you redefine the variable its gonna be hard to fix
+    b) Static functions 
+
+3)
+    a) All the headers
+    b) util.c and main.c
+    c) all the .c files will have an object file
+    d) database.h and database.c
+    f) 
