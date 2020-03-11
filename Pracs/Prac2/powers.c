@@ -1,29 +1,17 @@
 #include <stdio.h>
-#include <math.h>
-double powers(void)
+int powers(void)
 {
-    static double power = 0.0;
-    double number;
-    power = power + 1;
-    number = pow(2.0, power);
-    return number;
+    static int power = 1;
+    power = power * 2;
+    printf("\nPower: %d\n", power);
+    return 0;
 
 }
 
-int main(void)
-{
-    double input;
-    double var = 0;
-    double exponent;
-    printf("What power do you want?\n");
-    scanf("%lf", &input);
-    while (var< input)
-    {
-        var++;
-        exponent = powers();
-        printf("%f\n", exponent);
-
+int main(void){
+    int number;
+    for (number=1;number<33;number++){
+    powers();
     }
     return 0;
 }
-

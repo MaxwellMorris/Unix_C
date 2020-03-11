@@ -3,8 +3,10 @@
 #endif
 
 #ifndef TRUE
-#define TRUE !TRUE
+#define TRUE !FALSE
 #endif
 
-
+#ifndef BETWEEN
+#define BETWEEN(x_min, x_max, x) (((x) >= (x_min)) && ((x) <= (x_max)))
+#endif
 
