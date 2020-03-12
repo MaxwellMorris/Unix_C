@@ -19,7 +19,7 @@ int main(void){
 
     upper = 31;
 
-    while ((BETWEEN(lower, upper, value))==FALSE){
+    while ((BETWEEN(lower, (upper - 1), value))==FALSE){
 
     printf("\nGive a value between 1 and 31\n");
     value = getValue();
@@ -28,7 +28,7 @@ int main(void){
     for (number = 0; number < value; number++){
         result = powers();
     }
-    printf("The result is %d", result);
+    printf("The result is %d\n", result);
 
     return 0;
 }
