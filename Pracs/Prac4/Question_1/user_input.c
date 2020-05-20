@@ -6,6 +6,7 @@ void readInts(void){
     int value_2;
     int value_3;
     char char_1;
+    order3 order_ptr;
 
     printf("List a value:");
     scanf("%d", &value_1);
@@ -18,9 +19,9 @@ void readInts(void){
 
     printf("(A)scending or (D)escending value:");
     scanf(" %c", &char_1);
-
-    order3 *order_ptr = order(char_1);
+    order_ptr = order(char_1);
     (*order_ptr)(&value_1, &value_2, &value_3);
+    printf("Values %d, %d, %d.",value_1, value_2, value_3);
 
 
 }
